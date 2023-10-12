@@ -23,7 +23,7 @@ List<User> usersList = [
       phone: '23454353415',
       email: 'MR.GRAY.3000@mail.ru',
       avatar: 
-      'https://memepedia.ru/wp-content/uploads/2021/09/pichupido-mem.jpg'),
+      'https://www.vokrug.tv/pic/person/d/f/2/b/df2b37669ac865c182669c62c7ced9d9.jpeg'),
 
       User(
       age: 18,
@@ -69,7 +69,7 @@ class _UsersListState extends State<UsersList> {
                   width: 100.0, 
                   child: usersList[index].avatar == ''
                   ? Image.network(
-                'https://memepedia.ru/wp-content/uploads/2021/09/pichupido-mem.jpg')
+                'https://www.aelita.ua/wp-content/uploads/2022/12/photo_2022-11-30_13-10-17-1140x843.jpg')
                 : Image.network(usersList[index].avatar,
                 fit: BoxFit.cover),
         ),
@@ -85,7 +85,7 @@ class _UsersListState extends State<UsersList> {
                           Text('Фамилия: ' + usersList[index].lastName),
                           Text('Возраст: ' + usersList[index].age.toString()),
                           Text('Телефон: ' + usersList[index].phone),
-                          Text('Эл. Адрес: ' + usersList[index].email),
+                          Container(width: 200, child: Text('Эл. Адрес: ' + usersList[index].email, maxLines: 3)),
                         ],
                       ),
                             ),
